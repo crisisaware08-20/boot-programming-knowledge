@@ -1,2 +1,2 @@
-# Personal notes while learning computer science
-# basic-programming-knowledges
+# Boot your computer science knowledges
+### basic-programming-knowledges
