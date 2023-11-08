@@ -1,0 +1,61 @@
+
+Protocols, interfaces, and ports
+=================================
+
+
+
+port - a process can listen to and handle requests
+
+port - an identifier element of a service or process
+
+
+
+
+
+Network Layers
+==============
+
+
+Application layer
+  This layer contains the "language" that applications and servers use to communicate
+  HTTP, TLS(encryption protocol)
+
+  Application layer protocols can often be combined
+  HTTP + TLS  = HTTPS
+
+  Application layer processing occures in user space
+
+Transport layer
+  Defines the data transmission characteristics of the application layer
+
+  This layer includes data integrity checking, source and destination ports and the
+  specifications of breaking application data into packets at the host side
+
+  TCP and UDP
+
+  In Linux, the transport layer and all layers below are primarily handled by the kernel,
+  but there are some exceptions whre packets are sent into user space for processing
+
+Network or internet layer
+  Defines how to move packets from a source host to a destination host
+
+  Because network layers are meant to be hardware independent, you can simultaneously configure
+  several  independent network layers such as IPv4 IPv6 IPX AppleTalk on a single host
+
+Physical layer
+  Defines how to send raw data across a physical medium such as Ethernet or a modem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
