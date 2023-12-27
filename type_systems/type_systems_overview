@@ -31,7 +31,7 @@ A Hindley–Milner (HM) type system is a classical type system for the lambda ca
 
 
 The main purpose of a type system is to reduce possibilities for bugs in computer programs by
-defining INTERFACES between different parts of a coputer program, and then CHECKING that the parts
+defining INTERFACES between different parts of a computer program, and then CHECKING that the parts
 have been CONNECTED IN A CONSISTENT WAY                                     
 
 
