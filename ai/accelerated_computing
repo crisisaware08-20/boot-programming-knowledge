@@ -1,0 +1,15 @@
+
+Accelerated computing
+------------------
+
+Both commercial and technical systems today embrace accelerated computing to handle jobs such as machine learning, data analytics, simulations and visualizations. It’s a modern style of computing that delivers high performance and energy efficiency.
+
+
+google/alphabet - tensor
+microsoft - maia 100
+meta - The chip
+nvidia - GPU
+
+
+CUDA programming model, an additional layer on top of Nvidia GPU architecture
+Developers can write CUDA programs in C/C++, or Fortran.

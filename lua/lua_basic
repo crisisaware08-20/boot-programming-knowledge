@@ -1,0 +1,30 @@
+
+Lua - extensible extension language
+
+
+Procedural features combined with data description facilities. 
+
+Procedural Features:
+function, loops, conditionals, variable manipulation, control flow
+
+
+Data Description:
+table, strings, number, booleans
+
+Tables ---> represents
+             1) arrays
+													2) dictionaries
+													3) objects
+													4) other complex data structure
+
+
+
+Track of your thoughts, priorities in what you do
+--------------
+Gather knowledge
+Execute Lua from neovim
+Execute Lua from cli
+
+
+how is it embbeded into c ?
+how does it extend an application ?

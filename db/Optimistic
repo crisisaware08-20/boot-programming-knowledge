@@ -1,0 +1,17 @@
+What is OPTIMISTIC CONCURRENCY and why it is used in environments with LOW DATA CONTENTION ?
+
+
+CONTENTION, is the situation when processes or threads are trying to access the same resource.
+In our case the contention is focused on lock resource that is used as a synchronization mechanism
+
+DATA CONTENTION
+---------------
+In database management systems, block contention (or data contention) refers to multiple processes or instances competing for access to the same index or data block at the same time. In general this can be caused by very frequent index or table scans, or frequent updates.
+
+
+In optimistic concurrency is no lock, but how does it come that you need at least READ_COMMIT isolation level ?
+
+
+Implementation of the optimistic concurrency
+
+

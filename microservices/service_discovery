@@ -1,0 +1,13 @@
+Service discovery
+
+The Context
+-----------
+A process representing a service is being killed due to unknown reasons, the client of the service should be able to
+find other services regardless where are they located.
+
+Service instances have dynamically assigned network locations
+
+Solution:
+You client must use a client discovery
+
+
