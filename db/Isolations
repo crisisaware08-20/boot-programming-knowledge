@@ -1,0 +1,18 @@
+
+
+
+
+
+| Isolation Level  | Locking strategy                                                                                 |
+|------------------+--------------------------------------------------------------------------------------------------|
+| Read Uncommitted | Read: No Lock acquired                                                                           |
+|                  | Write: No Lock acquired                                                                          |
+|------------------+--------------------------------------------------------------------------------------------------|
+| Read committed   | Read: Shared lock acquired and released as soon as read is done                                  |
+|                  | Write: Exclusive lock acquired and keep till end of transaction                                  |
+|------------------+--------------------------------------------------------------------------------------------------|
+| Repeatable read  | Read: Shared lock acquired and released only at the end of the transaction                       |
+|                  | Write: Exclusive lock acquired and released only at the end of the transaction                   |
+|------------------+--------------------------------------------------------------------------------------------------|
+| Serializable     | same as "Repeatable read" + apply Range lock and lock is only released at the end of transaction |
+|------------------+--------------------------------------------------------------------------------------------------|

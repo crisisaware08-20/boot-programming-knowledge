@@ -17,6 +17,7 @@ All or nothing
 
 Consistency
 ---------
+  in RDBMS this are the constraints: foreign keys, uniques, etc
 
 
 Isolation
