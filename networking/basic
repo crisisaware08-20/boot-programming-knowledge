@@ -1,0 +1,31 @@
+
+
+                                               OSI Model
+
+
+													Application
+													Presentation
+													Session
+													Transport 
+													Network 
+													Data Link
+                          Physical
+
+
+     10001011010101000 this goes to destination1, destination2, destination3 ...
+                                             
+                 +---------+
+                 |10.0.0.5 | _       
+                 +---------+  \_     
+                                \_   
+                                  \_+--------+
+                                    \   R    |
+                                    |10.0.0.1|                        
+                                    +--------+
+
+
+           +-------+         +-----+ 
+           | http  |         |sfpt |     
+           +-------+         +-----+ 
+
+

@@ -1,0 +1,54 @@
+
+Remote Procedure Call is a software communication protocol.
+
+RPC - Remote Procedure Call
+
+RPC model implies a level of location transparency.
+
+RPC is a form of IPC
+
+RPC is a request-response protocol
+
+
+Standard Contact Mechanisms
+---------------------------
+
+
+
+
+                          machine 1                                 machine 2
+
+                   +------------------------+                +---------------------------+
+                   |              --> [s]   |----------------|    []                     |
+                   |    --> []              |      |         |                           |
+                   +------------------------+      |         +---------------------------+
+                                                   |   
+      a) invocation of a method located            |   
+         on the same machine                       |   
+                                                   |   
+      b) invocation of a method located            |   
+         on a separate machine                     |   
+                                                   |   
+                                                       
+                                                Network       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
