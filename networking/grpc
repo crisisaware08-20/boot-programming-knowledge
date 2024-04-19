@@ -13,7 +13,7 @@ RPC is a request-response protocol
 Standard Contact Mechanisms
 ---------------------------
 
-
+grpc is using HTTP/2 as transport protocol and Protobuf as serialization
 
 
                           machine 1                                 machine 2
