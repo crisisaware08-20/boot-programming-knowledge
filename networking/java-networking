@@ -22,6 +22,7 @@ This is accomplished through the use of a port, which is a numbered socket on a 
                                            |   +------------+    |
                                            |   |  session 3 |    |
                                            |   +------------+    |
+
                                            |                     |
                                            |                     |
                                            +---------------------+
@@ -31,7 +32,4 @@ This is accomplished through the use of a port, which is a numbered socket on a 
 
 
 
-What is the communication protocol a socket is using ?  IP - low level routing protocol that breaks data into small packets
-and sends them to an address accross network, which does not guarantee to deliver said packets to the destination.
-
-
+What is the communication protocol a socket is using ? TCP and IP

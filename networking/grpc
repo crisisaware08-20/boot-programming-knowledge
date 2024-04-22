@@ -66,3 +66,11 @@ For datagram-oriented sockets(e.g UDP), data is transmitted in discrete packets 
 Through this process, the OS kernel manages the state of each socket, handles network I/O operations, and ensure proper data transmission between endpoints.
 
 
+
+
+GRPC modes
+---------------
+1. Unary gRPC
+2. Server Streaming - watching youtube, the server is sending information but client does not asking for it
+3. Client Streaming - uploading a file, client sends information and server does not respond
+4. Bidirectional - WebSocket, chatting.
