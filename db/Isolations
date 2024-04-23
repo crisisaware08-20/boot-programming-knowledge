@@ -16,3 +16,8 @@
 |------------------+--------------------------------------------------------------------------------------------------|
 | Serializable     | same as "Repeatable read" + apply Range lock and lock is only released at the end of transaction |
 |------------------+--------------------------------------------------------------------------------------------------|
+
+
+Read commited - Each Query in a Transaction only sees commited stuff
+
+Repeatable read - Each Query in a transaction only sees committed updates at the beggining of transaction
