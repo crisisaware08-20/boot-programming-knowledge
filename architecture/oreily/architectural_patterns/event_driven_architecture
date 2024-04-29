@@ -111,21 +111,10 @@ A Queue is an append only ordered list
 4. PUB/SUB - Often called streaming.
 
 
-                                                                  +------------+     consumers in this CG share the load as with Queues, round robbin
-                                 +----------------+               |CG1         |
-                                 |  Topic         |               | c1, c2, etc|
-                                 | +----------+   |               +------------+
-                                 | | R1 R2 R3 |   |               +------------+
-                                 | +----------+   |               |CG2         |     each CG gets full allotment of the records written in the T.
-                                 +----------------+               |  c1,c2, etc|     These new consumers also can go back in time to read Records.
-                                                                  +------------+
-
-
-Much like a Queue. Records are durable
-With topics we retain the data for as long as you need.
-We can offer Time limit
-
-
-
-
-
+                                                              Much like a Queue. Records are durable
+                                 +----------------+
+                                 |  Topic         |
+                                 | +----------+   |
+                                 | | R1 R2 R3 |   |
+                                 | +----------+   |
+                                 +----------------+
