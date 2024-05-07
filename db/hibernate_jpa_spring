@@ -1,4 +1,10 @@
+                                        TRANSACTION AND CONCURRENCY
 
+
+[] Defining database and system transaction essentials
+[] Controlling concurrent access with Hibernate and JPA
+[] Using non-transactional data access
+[] Managing transactions with Spring and Spring Data
 
 
 
@@ -29,6 +35,13 @@ Several things in one go
 1) Find the winning bid for the auction
 2) Charge the seller of the item the cost of the auction
 3) Notify the seller and successful bidder
+
+
+
+
+low level transactions: database and system
+
+
 
 
 New features in JPA2
