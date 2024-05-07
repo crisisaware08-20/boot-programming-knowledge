@@ -29,5 +29,5 @@ Another transaction T2 inserted a new row and I(T1) I picked it up when I should
 Lost updates
 -----------
 
-When data of T1 is overwritten by onether transaction T2 before T1 is committed.
+When data of T1 is overwritten by another transaction T2 before T1 is committed.
 
