@@ -32,6 +32,8 @@ Exclusive lock - only one transaction can aquire lock upon the row
 | T3            |        | read A |          | Tx2 put a shared lock on A record, it's allowed                   |
 |---------------+--------+--------+----------+-------------------------------------------------------------------|
 | T4            |        |        | update A | Tx3 requires exclusive lock, no other reads(shared locks) allowed |
+|               |        |        |          | However the Tx3 should wait for Tx2 and Tx1 to release aquired    |
+|               |        |        |          | shared locks.                                                     |
 |---------------+--------+--------+----------+-------------------------------------------------------------------|
 
 
