@@ -1,6 +1,5 @@
                                         TRANSACTION AND CONCURRENCY
 
-
 [] Defining database and system transaction essentials
 [] Controlling concurrent access with Hibernate and JPA
 [] Using non-transactional data access
@@ -31,116 +30,56 @@
 (time)          T1
 
 
-Several things in one go
+Example of several things that should be in one go
 1) Find the winning bid for the auction
 2) Charge the seller of the item the cost of the auction
 3) Notify the seller and successful bidder
 
 
+Data base transactions have to be short because open transactions consume data base resources and potentially prevent concurrent access due to exclusive locks on data.
 
 
-low level transactions: database and system
+Understanding database-level concurrency
+----------------------------------------
 
+a) Complete isolation comes at high price
 
+b) By decreasing isolation level you can increase performance and scalabilty of the system
 
+c) Concurrent transactions should be isolated, what level ?
 
-New features in JPA2
+Bad things that can occur and transaction isolation can prevent
+lost update, dirty read, unrepeatable reads, phatom read
 
 
-New lock modes and exceptions for pessimistic locking
-a) You can set lock optimistic or pesimistic on a @Query
+Read uncommited isolation - a system that does not permit lost updates operates in uncommited isolation.
 
++--------------------------------------------------------------------------------------------------------------+
+|                            +------------+                                                                    |
+|               tx2          |  value 11  |       tx1                                                          |
+|                            +-----+------+                                                                    |
+|                                  |                                                                           |
+|                                  |  <---- tx1 starts                                                         |
+|                                  |  <---- read                                                               |
+|                                  |  <---- update to 12                                                       |
+|                   tx2 starts     |                                                                           |
+|                   read 12  --->  |                                                                           |
+|                                  |    This isolation prevents only from                                      |
+|           attempt to update ---> |    lost updates, as the tx2 can be rolled back                            |
+|               No allowed!!!      |    the tx1 ends up with a dirty read                                      |
+|               tx1 should commit  |                                                                           |
+|                                  |    A DBMS may implement this isolation level with exclusive write locks   |
+|                                  |                                                                           |
++--------------------------------------------------------------------------------------------------------------+
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                         Spring Chaotic Context
-=============================================================================================
-
-DataSource(javax.sql) - A factory for connection to the physical data source. An alternative to DriverManager facility.
-
-The DataSource interface is implemented by a driver vendor. There are three types of implementations:
-1. Basic implemenation -> produces a standard  Connection object
-2. Connection pooling implementation
-3. Distributed transaction implementation
-
-
-Spring boot automatically configures a lightning-fast connection pool, either HikariCP, Appache Tomcat, or CommonsDBCP
-
-//configure data source
-//configure entity manager, an entity manager will require a data source
-//configure transaction manager
-
-+-----------------------------------------------------+
-|@EnableJpaRepositories(                              |
-|   basePackages = "com.baeldung.multipledb.dao.user",|
-|   entityManagerFactoryRef = "userEntityManager",    |
-|   transactionManagerRef = "userTransactionManager"  |
-|)                                                    |
-+-----------------------------------------------------+
-
-
-+--------------------------------------------+
-|@Test                                       |  @Transactional can specify the transactionManager bean responsible of
-|@Transactional("userTransactionManager")    |  transaction's scope.
-+--------------------------------------------+
-================================================================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Read commited isolation - prevent lost updates, and dirty reads
+   +------------------------------------------------------------------------------------------------------------------------+
+   |  "shared read lock", and "exclusive write locks"                                                                       |
+   |  Read transactions don't block other transactions from accessing the row, but an uncommited write transaction blocks al| 
+   |  other transactions from accessing the row.                                                                            |
+   |  This isolation seems to be a good fit for heavy reading systems.                                                      |
+   +------------------------------------------------------------------------------------------------------------------------+
 
 
 
