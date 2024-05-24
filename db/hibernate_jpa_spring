@@ -54,37 +54,32 @@ lost update, dirty read, unrepeatable reads, phatom read
 
 Read uncommited isolation - a system that does not permit lost updates operates in uncommited isolation.
 
-+--------------------------------------------------------------------------------------------------------------+
-|                            +------------+                                                                    |
-|               tx2          |  value 11  |       tx1                                                          |
-|                            +-----+------+                                                                    |
-|                                  |                                                                           |
-|                                  |  <---- tx1 starts                                                         |
-|                                  |  <---- read                                                               |
-|                                  |  <---- update to 12                                                       |
-|                   tx2 starts     |                                                                           |
-|                   read 12  --->  |                                                                           |
-|                                  |    This isolation prevents only from                                      |
-|           attempt to update ---> |    lost updates, as the tx2 can be rolled back                            |
-|               No allowed!!!      |    the tx1 ends up with a dirty read                                      |
-|               tx1 should commit  |                                                                           |
-|                                  |    A DBMS may implement this isolation level with exclusive write locks   |
-|                                  |                                                                           |
-+--------------------------------------------------------------------------------------------------------------+
+
+                             +------------+
+                tx2          |  value 11  |       tx1
+                             +-----+------+
+                                   |
+                                   |  <---- tx1 starts      
+                                   |  <---- read 
+                                   |  <---- update to 12
+                    tx2 starts     |
+                    read 12  --->  |
+                                   |    This isolation prevents only from
+            attempt to update ---> |    lost updates, as the tx2 can be rolled back
+                No allowed!!!      |    the tx1 ends up with a dirty read
+                tx1 should commit  |
+                                   |    A DBMS may implement this isolation level with exclusive write locks
+                                   |
+
 
 
 Read commited isolation - prevent lost updates, and dirty reads
-   +------------------------------------------------------------------------------------------------------------------------+
-   |  "shared read lock", and "exclusive write locks"                                                                       |
-   |  Read transactions don't block other transactions from accessing the row, but an uncommited write transaction blocks al| 
-   |  other transactions from accessing the row.                                                                            |
-   |  This isolation seems to be a good fit for heavy reading systems.                                                      |
-   +------------------------------------------------------------------------------------------------------------------------+
 
 
 
 
-
+/Users/mihailiurco/.local/state/nvim/swap/Users/mihailiurco/github/basic-programming-knowledges/db/hibernate_
+jpa_spring.swp
 
 
 
