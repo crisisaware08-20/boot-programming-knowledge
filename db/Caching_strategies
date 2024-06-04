@@ -33,7 +33,7 @@ Writing data to both the cache and the primary data source simultaneously:
 	a) Introduce latency due to dual write
 	b) Consistency is ensured
 
-Write-behind writes data first to cache and then asynchronously is updates the primary source: 
+Write-behind writes data first to cache and then asynchronously updates the primary source: 
 	a) Reduce latency
 	b) Increase risk of data incosistency
 

@@ -72,14 +72,9 @@ Read uncommited isolation - a system that does not permit lost updates operates 
                                    |
 
 
-
 Read commited isolation - prevent lost updates, and dirty reads
 
 
-
-
-/Users/mihailiurco/.local/state/nvim/swap/Users/mihailiurco/github/basic-programming-knowledges/db/hibernate_
-jpa_spring.swp
 
 
 
