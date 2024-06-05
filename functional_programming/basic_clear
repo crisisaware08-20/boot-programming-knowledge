@@ -1,0 +1,64 @@
+Primary source: https://opendsa.cs.vt.edu/ODSA/Books/PL/html/FreeBoundVariables.html#:~:text=A%20variable%20that%20is%20not,i.e.%2C%20declaration)%20of%20y.
+
+
+
+
+                                                                      +----------------------+
+                                                     +--------------- |  variable declaration|
+                                                     |                +----------------------+
+                            Variable occurrences ----+
+                                                     |                +----------------------+
+                                                     +--------------- |  variable use        |
+                                                                      +----------------------+
+
+                                   When there is no link between "Bound" and "Binding Occurence" then it's a free variable
+                                   When the bound process happens ?
+
+
+
+
+                                              Bound              Binding Ocurrence
+
+
+
+
+
+
+
+                                                    Binding Scheme
+                                                          |
+                                                          |
+                                                    Static Binding
+                                         (a.k.a static scoping or lexical binding)
+
+
+
+
+
+
+                              languages with support for higher order functions with free variables
+
+
+                                    closure - a value
+                                    when is it evaluated ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
