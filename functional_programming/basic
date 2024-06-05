@@ -20,7 +20,7 @@ In computer programming, the term free variables referes to variables used in fu
 
 "non local variable" synonym with "free variable"
 
-Free and bounded variables
+Free and Bounded variables
 binding scheme: static binding(a.k.a static scoping, or lexical binding)
 
 

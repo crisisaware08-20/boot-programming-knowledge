@@ -13,12 +13,12 @@ Primary source: https://opendsa.cs.vt.edu/ODSA/Books/PL/html/FreeBoundVariables.
 
                                    When there is no link between "Bound" and "Binding Occurence" then it's a free variable
                                    When the bound process happens ?
+                                   A free variable that has been bound with a Closure: upvalues
 
 
-
-
-                                              Bound              Binding Ocurrence
-
+                                +---------------------+          +-----------------------------------------+
+                                | Bound(the variable) |          | Binding Occurrence(variable declaration)|
+                                +---------------------+          +-----------------------------------------+
 
 
 
@@ -30,7 +30,7 @@ Primary source: https://opendsa.cs.vt.edu/ODSA/Books/PL/html/FreeBoundVariables.
                                                           |
                                                     Static Binding
                                          (a.k.a static scoping or lexical binding)
-
+         oop languages: dynamic binding is used at runtime based on object, while static binding at compile based on reference type
 
 
 
@@ -41,24 +41,5 @@ Primary source: https://opendsa.cs.vt.edu/ODSA/Books/PL/html/FreeBoundVariables.
 
                                     closure - a value
                                     when is it evaluated ?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
