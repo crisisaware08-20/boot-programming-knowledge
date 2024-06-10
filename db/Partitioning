@@ -46,8 +46,10 @@ Database partitioning involves spliting a logical database into distinct, indepe
 
 Sharding
 ----------------
-Is a subset of partitioning where different Shards are distributed across distinct machines
-or nodes. 
+A database shard is a horizontal partition of data in a database or search engine.
+Each shard is hold on separate database server instance, to spread load.
+
+Is a subset of partitioning where different Shards are distributed across distinct machines or nodes. 
 This structure offers severals benefits, 
   a) improved scalability
   b) higher availability
