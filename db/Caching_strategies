@@ -11,7 +11,7 @@ This strategy is useful for scenarios where the cache contains frequently access
 
 Two additional benefits stem from the cache being separated from the database:
 		1. In the instance of cache failure, the system goes directly to the datbase - RESILIENCY.
-		2. With the cache being separate, it ca employ a different data model than that of the database.
+		2. With the cache being separate, it can employ a different data model than that of the database.
 
 
 Read-through and Read-ahead caching

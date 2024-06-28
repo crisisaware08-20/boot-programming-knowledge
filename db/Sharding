@@ -28,10 +28,10 @@ Does kafka support sharding ?
 
 
 
-Data Distribution Example: In a diverse­ e-commerce platform, the­ distribution of user data aligns along geographic regions. Each shard stores users from specific areas, such as North America in one shard and European users in anothe­r.
+Data Distribution Example: In a diverse­ e-commerce platform, the­ distribution of user data aligns along geographic regions. Each shard stores users from specific areas, such as North America in one shard and European users in another.
 
 
-Scalability Example: A social media platform that is experiencing fast growth in users may employ a technique called sharding. This involve­s distributing the data of new sign-up users across multiple shards, preventing any individual shard from becoming ove­rloaded with data.
+Scalability Example: A social media platform that is experiencing fast growth in users may employ a technique called sharding. This involves distributing the data of new sign-up users across multiple shards, preventing any individual shard from becoming ove­rloaded with data.
 
 Query Performance: Sharding's parallel processing capabilities greatly enhance query performance, particularly for
 workloads that prioritize reading. By executing queries simultaneously on individual shards, the system
