@@ -3,7 +3,7 @@
     Answer: an evironment with concurrent transactions.
 
 [v] What is concurrency control implementation used for each of transaction level isolation ?
-   A pessimistic concurrency control method like Two-phase locking(2PL) that guaratees conflict-serializability.
+   A pessimistic concurrency control method like Two-phase locking(2PL) that guarantees conflict-serializability.
 	 The Protocol uses locks, applied by a transaction to data, which may block other transactions from accessing the same data during the transaction's life.
 
 https://learn.microsoft.com/en-us/sql/t-sql/statements/set-transaction-isolation-level-transact-sql?view=sql-server-ver16
