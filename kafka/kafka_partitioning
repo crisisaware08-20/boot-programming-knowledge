@@ -52,10 +52,3 @@ Single Partition, this limits scalability
 
 Ensure each partition is consumed by only one consumer thread within the group
 
-
-
-
-
-
-
-
